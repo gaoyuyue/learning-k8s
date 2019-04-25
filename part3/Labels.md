@@ -4,6 +4,10 @@
 
  标签是可以附加到资源的任意键值对
 
+```shell
+kubectl explain label
+```
+
 ## 2. labels有什么用?
 
 用以选择具有该确切标签的资源
@@ -32,6 +36,10 @@ spec:
       ports:
         - containerPort: 8080
           protocol: TCP
+```
+
+```shell
+kubectl apply ???
 ```
 
 
@@ -70,6 +78,8 @@ spec:
 
   ```shell
   kubectl get po -l hi-label
+  
+  kubectl get po -L hi-label # 列出label列
   ```
 
   
